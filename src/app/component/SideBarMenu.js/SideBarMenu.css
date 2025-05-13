@@ -1,0 +1,211 @@
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+}
+
+.sidebarMenuContainer {
+    background-color: black;
+    width: 16rem;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    overflow-y: auto;
+    overflow-x: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+    border-radius: 0 0 10px 10px;
+    border-radius: 1px solid white;
+}
+
+.homeContainer {
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+
+
+}
+
+
+.sidebarMenuContainer .sidebarMenuItem {
+    color: white;
+    width: 13rem;
+    text-decoration: none;
+    font-size: .8rem;
+    font-weight: 500;
+    padding: .5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    display: flex;
+
+}
+
+.profileInitials {
+    background-color: rgb(7, 158, 169);
+    color: white;
+    width: 23px;
+    height: 23px;
+    border-radius: 4px;
+    display: flex;
+    padding-left: .15em;
+    font-weight: bold
+}
+
+.profileName {
+    margin-left: 1rem;
+
+}
+
+.profileName:hover,
+.searchWorkPlace:hover,
+.createIssue:hover {
+    background-color: rgba(46, 44, 44, 0.933);
+    padding: 2px 2px;
+    border-radius: 2px;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.searchWorkPlace {
+    margin-left: 1rem;
+
+}
+
+
+.createIssue {
+    margin-left: 1rem;
+}
+
+.profileNamePopup {
+    position: absolute;
+    top: 4rem;
+    width: 90%;
+    height: 10rem;
+    background-color: rgb(152, 148, 148);
+    padding: 1rem;
+    border-radius: 6px;
+    z-index: 900;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
+    font-size: .9rem;
+    align-items: flex-start;
+}
+
+.profileNamePopup>button:hover {
+    background-color: rgb(174, 169, 169);
+    color: white;
+    padding: .3rem;
+    border-radius: 5px;
+    transition: .5s;
+    cursor: pointer
+}
+
+
+
+.createIssuePopup {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 50rem;
+    height: 24rem;
+    margin-top: 13rem;
+    border-radius: 10px;
+    z-index: 1000;
+    left: 18rem;
+
+
+}
+
+.createIssueHeader {
+    display: flex;
+    flex-direction: row;
+    margin: .5rem;
+    gap: 2rem;
+    color: white;
+
+
+}
+
+.closeButton {
+    margin-left: 30rem;
+    background-color: rgb(93, 95, 97);
+    color: white;
+    font-weight: bold;
+    padding: .2rem;
+    height: 30px;
+    width: 30px;
+    border-radius: 5px;
+
+}
+
+.linearButton {
+    border-radius: 5px;
+    background-color: rgb(180, 175, 175);
+    padding: 7px;
+}
+
+.createIssueHeader>h4 {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+
+.createIssueBody {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    gap: 1rem;
+
+}
+
+.createIssueBody>input {
+    outline: none;
+
+}
+
+.createIssueButtons {
+    display: flex;
+    flex-direction: row;
+    column-gap: 2rem;
+    margin: 1rem;
+    margin-top: 8rem;
+}
+
+.createIssueButtons>button,
+.createIssueFooter>button {
+    background-color: rgb(133, 135, 137);
+    padding: .3rem;
+    border: 1px solid rgb(148, 144, 144);
+    border-radius: 5px;
+}
+
+.whiteLine {
+    width: 100%;
+    height: 1px;
+    background-color: rgb(148, 144, 144);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.createIssueFooter {
+
+    display: flex;
+    flex-direction: row;
+    margin: 1rem;
+    gap: 40rem
+}
+
+.createIssueFooter>button {
+    background-color: rgb(153, 185, 218);
+    color: white;
+    font-weight: bold;
+    padding: .2rem;
+
+}
